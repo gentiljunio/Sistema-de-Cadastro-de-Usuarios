@@ -8,7 +8,7 @@ let usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
 
 // FUNÇÃO: Salvar ou Alterar Usuário
 userForm.addEventListener('submit', (e) => {
-    e.preventDefault(); // Impede a página de recarregar
+    e.preventDefault();
 
     const index = document.getElementById('editIndex').value;
 
@@ -124,4 +124,5 @@ themeToggle.addEventListener('click', () => {
     htmlElement.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
     atualizarIcone(newTheme);
+
 });
