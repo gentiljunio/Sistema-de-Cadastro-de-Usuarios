@@ -1,0 +1,249 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background: #28a745;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #218838;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f8f9fa;
+}
+
+.btn-edit {
+    background: #ffc107;
+    color: black;
+    margin-right: 5px;
+}
+
+.btn-delete {
+    background: #dc3545;
+    color: white;
+}
+
+/* modo escuro */
+/* Definição de Variáveis */
+:root {
+    --bg-body: #7fffd4;
+    --bg-card: #ffffff;
+    --text-primary: #333333;
+    --border-color: #dddddd;
+    --input-bg: #ffffff;
+    --header-table: #f8f9fa;
+
+}
+
+[data-theme="dark"] {
+    --bg-body: #121212;
+    --bg-card: #1e1e1e;
+    --text-primary: #f0f0f0;
+    --border-color: #444444;
+    --input-bg: #2d2d2d;
+    --header-table: #333333;
+    --placeholder-color: #ffff;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: var(--bg-body);
+    color: var(--text-primary);
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: var(--bg-card);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    text-align: center;
+    color: var(--text-primary);
+}
+
+form {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: var(--input-bg);
+    color: var(--text-primary);
+}
+
+input::placeholder {
+    color: var(--placeholder-color);
+    opacity: 1;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background: #28a745;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #218838;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid var(--border-color);
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--header-table);
+}
+
+.btn-edit {
+    background: #ffc107;
+    color: black;
+    margin-right: 5px;
+}
+
+.btn-delete {
+    background: #dc3545;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    /* Empurra o botão para o final (direita) */
+    /* Mantém a largura igual à do seu .container */
+    margin: 20px auto;
+    /* Centraliza o bloco do header na tela */
+    padding: 0;
+    /* Alinha perfeitamente com a borda da div abaixo */
+}
+
+#theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+    /* Configuração para empilhar itens */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px;
+    min-width: 80px;
+    /* Garante que o botão não mude de largura bruscamente */
+    cursor: pointer;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-card);
+    color: var(--text-primary);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+/* Estilo do Ícone (Emoji) */
+#theme-toggle span {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+/* Estilo do Texto Pequeno */
+#theme-toggle small {
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+#theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+/* botões de ação do java script */
+.acoes-buttons {
+    display: flex;
+    /* Ativa o alinhamento flexível */
+    gap: 8px;
+    /* Cria o espaço entre os botões sem precisar de margin */
+    justify-content: flex-start;
+    /* Alinha os botões à esquerda da célula */
+}
+
+/* Garante que os botões não fiquem grudados se a tela diminuir */
+.acoes-buttons button {
+    white-space: nowrap;
+    /* Impede que o texto "Editar" quebre em duas linhas */
+    margin: 0;
+    /* Remove margens extras que podem atrapalhar */
+}
