@@ -73,7 +73,7 @@ th {
 }
 
 /* modo escuro */
-/* Definição de Variáveis */
+
 :root {
     --bg-body: #7fffd4;
     --bg-card: #ffffff;
@@ -180,20 +180,14 @@ th {
 header {
     display: flex;
     justify-content: flex-end;
-    /* Empurra o botão para o final (direita) */
-    /* Mantém a largura igual à do seu .container */
     margin: 20px auto;
-    /* Centraliza o bloco do header na tela */
     padding: 0;
-    /* Alinha perfeitamente com a borda da div abaixo */
 }
 
 #theme-toggle {
     position: fixed;
     top: 20px;
     right: 20px;
-
-    /* Configuração para empilhar itens */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -201,7 +195,6 @@ header {
 
     padding: 10px;
     min-width: 80px;
-    /* Garante que o botão não mude de largura bruscamente */
     cursor: pointer;
     border: 1px solid var(--border-color);
     background-color: var(--bg-card);
@@ -212,13 +205,11 @@ header {
     z-index: 1000;
 }
 
-/* Estilo do Ícone (Emoji) */
 #theme-toggle span {
     font-size: 20px;
     margin-bottom: 4px;
 }
 
-/* Estilo do Texto Pequeno */
 #theme-toggle small {
     font-size: 10px;
     text-transform: uppercase;
@@ -230,20 +221,13 @@ header {
     transform: scale(1.1);
 }
 
-/* botões de ação do java script */
 .acoes-buttons {
     display: flex;
-    /* Ativa o alinhamento flexível */
     gap: 8px;
-    /* Cria o espaço entre os botões sem precisar de margin */
     justify-content: flex-start;
-    /* Alinha os botões à esquerda da célula */
 }
 
-/* Garante que os botões não fiquem grudados se a tela diminuir */
 .acoes-buttons button {
     white-space: nowrap;
-    /* Impede que o texto "Editar" quebre em duas linhas */
     margin: 0;
-    /* Remove margens extras que podem atrapalhar */
 }
